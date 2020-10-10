@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<clients>
+<client id='1'>
+<firstname>eerikki</firstname>
+<lastname>maula</lastname>
+</client>
+<client id='2'>
+<firstname>aku</firstname>
+<lastname>ankka</lastname>
+</client>
+<client id='3'>
+<firstname>matti</firstname>
+<lastname>nykänen</lastname>
+</client>
+</clients>

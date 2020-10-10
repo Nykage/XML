@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type = "text/css" href="lentolippu.css"?>
+<!DOCTYPE lentolippu SYSTEM "lentolippu.dtd">
+
+<lentolippu>
+    <lento>
+        <mista alue="eurooppa"></mista>
+        <minne></minne>
+        <lahtoaika>
+            <kuu></kuu>
+            <paiva></paiva>
+            <tunti></tunti>
+            <min></min>
+        </lahtoaika>
+    </lento>
+    <matkustaja>
+        <sukunimi></sukunimi>
+        <etunimi></etunimi>
+    </matkustaja>
+    <hintatiedot class="2">
+        <hinta></hinta>
+        <vero></vero>
+    </hintatiedot>
+</lentolippu>

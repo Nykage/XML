@@ -1,0 +1,16 @@
+<!DOCTYPE catalog [
+    <!ELEMENT catalog (cover, products, contacts, stores)>
+    <!ELEMENT cover (cover-image, introduction)>
+    <!ELEMENT cover-image (#PCDATA)>
+    <!ELEMENT introduction (#PCDATA)>
+    <!ELEMENT products (product)>
+    <!ELEMENT product (game)>
+    <!ELEMENT game (#PCDATA)>
+    <!ATTLIST game console (ps2|xbox) #REQUIRED>
+    <!ELEMENT contacts (email, phone, address)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ELEMENT stores (store)>
+    <!ELEMENT store (#PCDATA)>
+]

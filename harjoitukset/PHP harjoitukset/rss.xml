@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='rss.xsl'?>
+<channel>
+<item id='1'>
+<title>RSS Information</title>
+<link>https://en.wikipedia.org/wiki/RSS</link>
+<published>05.08.2020</published>
+</item>
+<item id='2'>
+<title>XML Information</title>
+<link>https://en.wikipedia.org/wiki/XML</link>
+<published>16.09.2020</published>
+</item>
+</channel>

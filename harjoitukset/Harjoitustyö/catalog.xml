@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl" ?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+
+<catalog>
+    <cover>
+        <cover-image>cover.png</cover-image>
+        <introduction>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</introduction>
+    </cover>
+    <products>
+        <product>
+            <game console="ps2">ffxii.png</game>
+        </product>
+        <product>
+            <game console="ps2">fifa07.png</game>
+        </product>
+        <product>
+            <game console="ps2">jak3.png</game>
+        </product>
+        <product>
+            <game console="ps2">ffx2.png</game>
+        </product>
+        <product>
+            <game console="xbox">deadoralive3.png</game>
+        </product>
+    </products>
+    <contacts>
+        <email>info@sumashop.fi</email>
+        <phone>050-5551106</phone>
+        <address>Koskenparras 3, 55100 Imatra</address>
+    </contacts>
+    <stores>
+        <store>
+            <name>Sumashop Imatra</name>
+        </store>
+        <store>
+            <name>Antique shop Suma Lappeenranta</name>
+        </store>
+    </stores>
+</catalog>  

@@ -1,0 +1,12 @@
+<!DOCTYPE bill[
+    <!ELEMENT bill (sender, recipient, message, cost)>
+    <!ATTLIST bill type (phone bill|electricity bill) #REQUIRED>
+    <!ELEMENT sender (#PCDATA)>
+    <!ELEMENT recipient (#PCDATA)>
+    <!ELEMENT message (#PCDATA)>
+    <!ATTLIST message class (warning|normal) #IMPLIED>
+    <!ELEMENT cost (net-cost, taxes, gross-cost)>
+    <!ELEMENT net-cost (#PCDATA)>
+    <!ELEMENT taxes (#PCDATA)>
+    <!ELEMENT gross-cost (#PCDATA)>
+]>

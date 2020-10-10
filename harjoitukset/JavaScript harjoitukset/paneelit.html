@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneelit</title>
+    <link rel="stylesheet" href="paneelit.css">
+</head>
+<body>
+    <div class="top">
+        <h1>Paneelit</h1>
+        <h3>Mac: <input type="number" value=19 id="mac"></h3>
+        <h3>PC: <input type="number" value=25 id="pc"></h3>
+        <h3>Chromebook: <input type="number" value=12 id="chrome"></h3>
+    </div>
+
+    <table border="1">
+        <th>
+            <td>
+                Päivämäärä: <span id="pvm1"></span>, auringon paistetta keskimäärin 4 tuntia/paneeli
+            </td>
+        </th>
+        <tr>
+            <td>Paneelit 1-3</td>
+            <td>Toutanto kWh</td>
+            <td>Tietokoneiden kulutus kWh</td>
+            <td>Aurinkovoiman kattama %-osuus</td>
+            <td>Verkkovirran %-osuus</td>
+        </tr>
+        <tr>
+            <td>Yhteensä</td>
+            <td id="tuotanto1"></td>
+            <td id="kWh1"></td>
+            <td id="coverage1"></td>
+            <td id="other1"></td>
+        </tr>
+    </table>
+
+    <div class="top"></div>
+
+    <table border="1">
+        <th>
+            <td>
+                Päivämäärä: <span id="pvm2"></span>, auringon paistetta keskimäärin 4 tuntia/paneeli
+            </td>
+        </th>
+        <tr>
+            <td>Paneelit 1-3</td>
+            <td>Toutanto kWh</td>
+            <td>Tietokoneiden kulutus kWh</td>
+            <td>Aurinkovoiman kattama %-osuus</td>
+            <td>Verkkovirran %-osuus</td>
+        </tr>
+        <tr>
+            <td>Yhteensä</td>
+            <td id="tuotanto2"></td>
+            <td id="kWh2"></td>
+            <td id="coverage2"></td>
+            <td id="other2"></td>
+        </tr>
+    </table>
+
+    <script>
+        if (window.XMLHttpRequest) {
+           xmlhttp  =  new XMLHttpRequest();
+        } else {
+           xmlhttp  =  new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET","paneelit.xml",false);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+        var x = xmlDoc.querySelector("paneeli_data");
+        var x1 = x.getElementsByTagName("paneeli")[0]
+        var x2 = x.getElementsByTagName("paneeli")[1];
+        var x3 = x.getElementsByTagName("paneeli")[2];
+
+        var tuotanto1 = parseInt(x1.getElementsByTagName("tuotanto_1")[0].textContent) + parseInt(x2.getElementsByTagName("tuotanto_1")[0].textContent) + parseInt(x3.getElementsByTagName("tuotanto_1")[0].textContent);
+        var tuotanto2 = parseInt(x1.getElementsByTagName("tuotanto_2")[0].textContent) + parseInt(x2.getElementsByTagName("tuotanto_2")[0].textContent) + parseInt(x3.getElementsByTagName("tuotanto_2")[0].textContent);
+
+        var macValue = parseInt(document.getElementById("mac").value);
+        var pcValue = parseInt(document.getElementById("pc").value);
+        var chromeValue = parseInt(document.getElementById("chrome").value);
+        var kWh = macValue*0.03*6 + pcValue*0.03*6 + chromeValue*0.01*6;
+        var coverage1;
+        var coverage2;
+        var other1;
+        var other2;
+
+        if (tuotanto1 > kWh) {
+            coverage1 = 100;
+            other1 = 0;
+        } else {
+            coverage1 = tuotanto1 * 100 / kWh;
+            other1 = 100 - parseInt(coverage1);
+        };
+
+        if (tuotanto2 > kWh) {
+            coverage2 = 100;
+        } else {
+            coverage2 = tuotanto2 * 100 / kWh;
+            other2 = 100 - parseInt(coverage2);
+        };
+
+        document.getElementById("pvm1").textContent = x.getElementsByTagName("pvm_1")[0].textContent;
+        document.getElementById("pvm2").textContent = x.getElementsByTagName("pvm_2")[0].textContent;
+        document.getElementById("kWh1").textContent = kWh;
+        document.getElementById("kWh2").textContent = kWh;
+        document.getElementById("tuotanto1").textContent = tuotanto1;
+        document.getElementById("coverage1").textContent = coverage1.toFixed(0) + '%';
+        document.getElementById("other1").textContent = other1.toFixed(0) + '%';
+        document.getElementById("tuotanto2").textContent = tuotanto2;
+        document.getElementById("coverage2").textContent = coverage2.toFixed(0) + '%';
+        document.getElementById("other2").textContent = other2.toFixed(0) + '%';
+    </script>
+</body>
+</html>

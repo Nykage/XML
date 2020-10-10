@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="tuotteet.xsl" ?>
+<tuotteet>
+    <tuote>
+        <nimike>Omena</nimike>
+        <ovh>10</ovh>
+        <ale>8</ale>
+    </tuote>
+    <tuote>
+        <nimike>Peruna</nimike>
+        <ovh>14</ovh>
+        <ale>9</ale>
+    </tuote>
+    <tuote>
+        <nimike>Sipuli</nimike>
+        <ovh>11</ovh>
+        <ale>10</ale>
+    </tuote>
+    <tuote>
+        <nimike>Kalkkuna</nimike>
+        <ovh>12</ovh>
+        <ale>8</ale>
+    </tuote>
+</tuotteet>

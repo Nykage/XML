@@ -1,0 +1,39 @@
+rss {
+    display: block;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size:24pt;
+    color: #A52A2A;
+    margin: 1rem 0;
+}
+
+rss title {
+    display: block;
+    font-weight: bold;
+    font-size:30pt;
+    margin-top: 1rem;
+}
+
+rss news {
+    display: block;
+    margin-top: 2.5rem;
+}
+
+rss news headline {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+rss news headline text {
+    display: block;
+    font-weight: bold;
+}
+
+rss news headline date {
+    display: block;
+}
+
+rss news description {
+    display: block;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type = "text/css" href="bill.css"?>
+<!DOCTYPE bill SYSTEM "bill.dtd">
+
+<bill type="phone bill">
+    <sender>Seller</sender>
+    <recipient>Customer</recipient>
+    <message class="warning">
+        You haven't paid your last phone bill.
+        Please pay in 14 days or we will take consequences.
+    </message>
+    <cost>
+        <net-cost>
+        Net-cost: 10,00 €
+        </net-cost>
+        <taxes>
+        Taxes: 2,00 €
+        </taxes>
+        <gross-cost>
+        Cost: 12,00 €
+        </gross-cost>
+    </cost>
+</bill>  

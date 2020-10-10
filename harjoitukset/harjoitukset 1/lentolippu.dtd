@@ -1,0 +1,17 @@
+<!DOCTYPE lentolippu [
+    <!ELEMENT lentolippu (lento, matkustaja, hintatiedot)>
+    <!ELEMENT lento (mista, minne, lahtoaika)>
+    <!ELEMENT lahtoaika (kuu, paiva, tunti, min)>
+    <!ELEMENT matkustaja (sukunimi, etunimi)>
+    <!ELEMENT hintatiedot (hinta, vero)>
+    <!ELEMENT kuu (#PCDATA)>
+    <!ELEMENT paiva (#PCDATA)>
+    <!ELEMENT tunti (#PCDATA)>
+    <!ELEMENT min (#PCDATA)>
+    <!ELEMENT sukunimi (#PCDATA)>
+    <!ELEMENT etunimi (#PCDATA)>
+    <!ELEMENT hinta (#PCDATA)>
+    <!ELEMENT vero (#PCDATA)>
+    <!ATTLIST mista alue (eurooppa|amerikka|aasia) #REQUIRED>
+    <!ATTLIST hintatiedot class (1|2) #REQUIRED>
+]>

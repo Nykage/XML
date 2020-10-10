@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="favorite_games.xsl" ?>
+<!DOCTYPE favorite_games [
+<!ELEMENT games (game)+>
+<!ELEMENT game (title , developer , year , publisher , image , link)>
+<!ATTLIST game id CDATA "0">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT developer (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+]>
+
+<games>
+  <game id="1">
+    <title>FINAL FANTASY VII Remake</title>
+    <developer>Square Enix</developer>
+    <year>2020</year>
+    <publisher>Square Enix</publisher>
+    <image>https://images3.alphacoders.com/104/1040112.png</image>
+    <link>https://en.wikipedia.org/wiki/Final_Fantasy_VII_Remake</link>
+  </game>
+  <game id="2">
+    <title>Persona 5</title>
+    <developer>Atlus</developer>
+    <year>2017</year>
+    <publisher>Deep Silver</publisher>
+    <image>https://i.pinimg.com/originals/3d/36/cd/3d36cd15d2b4e55680a6548a4f798ae3.jpg</image>
+    <link>https://en.wikipedia.org/wiki/Persona_5</link>
+  </game>
+  <game id="3">
+    <title>Undertale</title>
+    <developer>Toby Fox</developer>
+    <year>2015</year>
+    <publisher>Toby Fox</publisher>
+    <image>https://i.pinimg.com/originals/eb/f5/a7/ebf5a7cfa2eb6f2b46aa288196ca87e3.jpg</image>
+    <link>https://en.wikipedia.org/wiki/Undertale</link>
+  </game>
+  <game id="4">
+    <title>NieR: Automata</title>
+    <developer>Platinum Games</developer>
+    <year>2017</year>
+    <publisher>Square Enix</publisher>
+    <image>https://cdn.hipwallpaper.com/i/81/38/r69Yoa.jpg</image>
+    <link>https://en.wikipedia.org/wiki/Nier:_Automata</link>
+  </game>
+  <game id="5">
+    <title>FINAL FANTASY X</title>
+    <developer>Square Enix</developer>
+    <year>2002</year>
+    <publisher>Square Enix</publisher>
+    <image>https://wallpapercave.com/wp/wp1215954.jpg</image>
+    <link>https://en.wikipedia.org/wiki/Final_Fantasy_X</link>
+  </game>
+</games>

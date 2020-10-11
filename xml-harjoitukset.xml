@@ -3,18 +3,23 @@
 
 <xml-harjoitukset>
     <harjoitukset>
-        <linkki></linkki>
+        <nimi>harjoitukset 1</nimi>
+        <linkki>https://github.com/Nykage/XML/tree/main/harjoitukset/harjoitukset%201</linkki>
     </harjoitukset>
     <harjoitukset>
-        <linkki></linkki>
+        <nimi>XSLT harjoitukset</nimi>
+        <linkki>https://github.com/Nykage/XML/tree/main/harjoitukset/XSLT%20harjoitukset</linkki>
     </harjoitukset>
     <harjoitukset>
-        <linkki></linkki>
+        <nimi>PHP harjoitukset</nimi>
+        <linkki>https://github.com/Nykage/XML/tree/main/harjoitukset/PHP%20harjoitukset</linkki>
     </harjoitukset>
     <harjoitukset>
-        <linkki></linkki>
+        <nimi>JavaScript harjoitukset</nimi>
+        <linkki>https://github.com/Nykage/XML/tree/main/harjoitukset/JavaScript%20harjoitukset</linkki>
     </harjoitukset>
     <harjoitukset>
-        <linkki></linkki>
+        <nimi>Harjoitustyö</nimi>
+        <linkki>https://github.com/Nykage/XML/tree/main/harjoitukset/Harjoitusty%C3%B6</linkki>
     </harjoitukset>
 </xml-harjoitukset>  
